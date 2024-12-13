@@ -10,5 +10,6 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class People extends Model
 {
-    //
+    protected $fillable = ['person_name', 'email'];
+
 }

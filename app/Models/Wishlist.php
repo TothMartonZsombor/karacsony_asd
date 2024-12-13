@@ -10,10 +10,10 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class Wishlist extends Model
 {
-    protected $fillable = ['publisher_team'];
+    protected $fillable = ['person_id', 'wishlist_name'];
 
-    public function game()
+    public function people()
     {
-        return $this->hasMany(Game::class);
+        return $this->hasMany(People::class);
     }
 }

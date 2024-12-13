@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class Gift extends Model
 {
-    protected $fillable = ['person_name', 'email'];
+    protected $fillable = ['gift_name', 'price', 'gift_types_id'];
 
     public function gift_type()
     {

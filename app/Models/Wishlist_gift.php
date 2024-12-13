@@ -2,13 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-use app\Models\Game;
-use app\Models\Publisher;
-use app\Models\Tag;
+
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Wishlist_gift extends Model
+class Wishlist_gift extends Pivot
 {
-    //
+    protected $fillable = ['wishlist_id', 'gift_id'];
 }

@@ -8,7 +8,7 @@ use app\Models\Publisher;
 use app\Models\Tag;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
-class Gift_type extends Pivot
+class Gift_type extends Model
 {
-    protected $fillable = ['wishlist_id', 'gift_id'];
+    protected $fillable = ['type'];
 }
