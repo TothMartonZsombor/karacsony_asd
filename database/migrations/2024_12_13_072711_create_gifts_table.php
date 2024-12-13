@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('gifts', function (Blueprint $table) {
             $table->id();
-            $table->string("gift_name");
-            $table->intiger("price");
-            $table->foreign('gift_type_id')->references('id')->on('gift_types');
+            $table->string('gift_name');
+            $table->intiger('price');
+            $table->foreign('gift_types_id')->references('id')->on('gift_types');
             $table->timestamps();
         });
     }
