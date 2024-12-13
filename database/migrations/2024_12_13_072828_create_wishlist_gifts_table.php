@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('wishlist_gifts', function (Blueprint $table) {
             $table->id();
+            $table->foreign('wishlists_id')->references('id')->on('wishlists');
             $table->timestamps();
         });
     }
